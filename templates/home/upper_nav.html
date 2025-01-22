@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upper_Navigator</title>
+    <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/upper_nav.js"></script>
+    <script type="text/javascript">
+        $('#upper_nav_intro_btn').on('click',function () {
+            alert("1111");
+        });
+
+        $('#upper_nav_intro_btn').click(function () {
+            alert("2222");
+        });
+
+    </script>
+</head>
+<body>
+    <div>
+        <button onclick="location.href='?lang=ko'">한글</button>
+        <button onclick="location.href='?lang=en'">ENG</button>
+        <span class="main__title">{{home_title}}</span>
+    </div>
+    <div>
+        <button id="upper_nav_intro_btn" onclick="alert('33333')">{{upper_nav_intro}}</button>
+    </div>
+</body>
+</html>
